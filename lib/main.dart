@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
-        primarycontSwatch: Colors.blue,
+        primarySwatch: Colors.blue,
+       // primarycontSwatch: ,
       ),
       home: const MyHomePage(),
     );
@@ -34,15 +34,15 @@ class _MyHomePageState extends State<MyHomePage> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            bottom: TabBar(
+            bottom: const TabBar(
                 tabs: [
                   Tab(icon: Icon(Icons.android), text: 'Android',),
                   Tab(icon: Icon(Icons.phone_iphone), text: 'Iphone',),
                 ],
             ),
-            title: Text('Tab Bar Demo'),
+            title: const Text('Tab Bar Demo'),
           ),
-          body: TabBarView(
+          body: const TabBarView(
               children: [
                 Center(child: Text('Android Spec.'),),
                 Center(child: Text('Iphone Spec.'),),
